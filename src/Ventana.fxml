@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="848.0" style="-fx-background-color: rgba(40, 40, 38, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VentanaIniciarController">
+    <children>
+        <Button fx:id="stopButton" layoutX="773.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleStopButtonAction" style="-fx-background-color: A2CD26; -fx-border-color: black; -fx-border-width: 1px; -fx-border-radius: 5px;" text="STOP" textAlignment="CENTER" />
+        <Label layoutX="531.0" layoutY="23.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" text="Tiempo:" />
+        <Button fx:id="generarletraButton" layoutX="728.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleGeneratorLetraButtonAction" style="-fx-background-color: A2CD26; -fx-border-color: black; -fx-border-width: 1px; -fx-border-radius: 5px;" text="GENERAR LETRA" textAlignment="CENTER" />
+        <Button fx:id="ValPalabraButton" layoutX="14.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleValidatorPalabraButtonAction" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: A2CD26; -fx-border-color: black; -fx-border-width: 1px; -fx-border-radius: 5px;" text="VALIDAR PALABRA" textAlignment="CENTER" />
+        <TextField fx:id="NombreTextField" layoutX="31.0" layoutY="242.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: white;" />
+        <Label layoutX="59.0" layoutY="205.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Nombre" />
+        <TextField fx:id="ApellidoTextField" layoutX="167.0" layoutY="242.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: white;" />
+        <Label layoutX="194.0" layoutY="205.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Apellido" />
+        <TextField fx:id="AnimalTextField" layoutX="301.0" layoutY="242.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: white;" />
+        <Label layoutX="333.0" layoutY="204.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Animal" />
+        <TextField fx:id="ObjetoTextField" layoutX="435.0" layoutY="241.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: white;" />
+        <Label layoutX="468.0" layoutY="204.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Objeto" />
+        <TextField fx:id="FrutaTextField" layoutX="568.0" layoutY="241.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: white;" />
+        <Label layoutX="607.0" layoutY="204.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Fruta" />
+        <TextField fx:id="PaisTextField" layoutX="707.0" layoutY="241.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: white;" />
+        <Label layoutX="749.0" layoutY="204.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Pais" />
+        <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/Logo.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="tiempoLabel" layoutX="632.0" layoutY="23.0" prefHeight="24.0" prefWidth="43.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        <Label layoutX="668.0" layoutY="23.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" text="Seg" />
+        <Label fx:id="LetraLabel" layoutX="536.0" layoutY="79.0" prefHeight="34.0" prefWidth="180.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" />
+      <Label fx:id="LetraPuntaje" layoutX="531.0" layoutY="127.0" prefHeight="34.0" prefWidth="180.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: white;" />
+      <Button fx:id="ResetButton" layoutX="167.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleResetButtonAction" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: A2CD26; -fx-border-color: black; -fx-border-width: 1px; -fx-border-radius: 5px;" text="REINICIAR JUEGO" textAlignment="CENTER" />
+    </children>
+</AnchorPane>
