@@ -55,8 +55,6 @@ public class VentanaIniciarController extends Application implements Initializab
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Ventana Iniciar.fxml"));
         loader.setController(this);
         Parent root = loader.load();
-
-        // Configuración adicional de la ventana y escena
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
